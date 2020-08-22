@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+.container{
+    max-width: auto;
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-rows: auto auto auto;
+    margin: 10px ;
+    padding: 10px ;
+    border-radius: 5px;
+    border-color: lawngreen;
+    background-color: #f2f2f2;
+ 
+  }
+
+    header
+    {
+      padding: 15px 0;
+      justify-content: center;
+      justify-items: center;
+    }
+ 
+
+
+  nav{
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto;
+    box-sizing: border-box;
+    border-color: black;
+    background-color: rgba(255,255,255,0.98);
+    padding: 10px 10px;
+    top: 0px;
+    width: 100%; 
+    left: 0;
+    z-index: 10000;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  nav ul li a{
+    text-decoration: none;
+  }
+
+
+  a:link{
+    color: blanchedalmond;
+  }
+
+  a:visited{
+    color: cadetblue;
+  }
+
+ 
+  ul { 
+    padding: 0 15px; 
+    margin: 5px;
+    text-align: center ;  
+  } 
+
+  h2{
+    margin: 6px;
+  }
+
+  ul li {
+    /* list-style : none;  */
+    display : inline; 
+    margin: 5px;
+    } 
+
+    
+    * {
+    box-sizing: border-box;
+    }
+  
+  body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0;
+    margin: 0 20px;
+  }
+
+
+  .direksi{
+    display: flex;
+    flex-direction: column;
+    justify-items: auto;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    justify-self: center;
+   
+  }
+  
+  .Kom{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .Kom .column {
+   
+    width: 20%;
+    padding: 0 10px;
+    /* border: 1px solid #884A6F; */
+   
+  }
+
+
+ .footer-sosmed{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background-color: #333337;
+  justify-content: space-between;
+  padding: 3px 30px;
+  bottom: 0px;
+  backdrop-filter: saturate(180%) blur(20px);
+  /* background-color: rgba(255,255,255,0.98); */
+}
+
+.footer-sosmed p{
+  /* padding: 0 15px; */
+  margin: 5px 2px;
+  font-size: 25px;
+  font-family: 'pacifico';
+  color: #ccc;
+  justify-content:center ;
+}
+
+.footer-sosmed li a img:hover{
+  transform: translatey(-2px);
+  transition: .3s all;
+
+}
+
+
+@media screen and (min-width: 767px){
+.footer-sosmed {
+    height: 52px;
+    position: sticky;
+    bottom: 0px;
+    padding: 3px 30px;
+    backdrop-filter: saturate(180%) blur(20px);
+    /* background-color: rgba(255,255,255,0.98); */
+    transform: translateY(0);
+    box-shadow: 0 0 15px rgba(0,0,0,0.075);
+    transition: transform .4s cubic-bezier(0.694,0.0482,0.335,1),box-shadow .4s cubic-bezier(0.694,0.0482,0.335,1),-webkit-transform .4s cubic-bezier(0.694,0.0482,0.335,1),-webkit-box-shadow .4s cubic-bezier(0.694,0.0482,0.335,1);
+  }
+
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+    margin: 0 -5px;
+  }
+  
+ 
+  /* Clear floats after the columns */
+  .row:after {
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    size: auto;
+ 
+   
+  }
+
+  .card:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+  .card img:hover
+  {
+    border-radius: 10px 10px 0 0;
+    clip-path: unset;
+  }
+
+  .card img
+  {
+    clip-path: polygon(50% 100%,100% 0, 0 0);
+  }
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /*====================contac us=====================*/
+ 
+  /* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container-footer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column-footer {
+    float: right;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  
+  }
+  
+  /* Clear floats after the columns */
+  .row-footer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column-footer, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+ 
+
+
+  /*================footer================*/
+ 
